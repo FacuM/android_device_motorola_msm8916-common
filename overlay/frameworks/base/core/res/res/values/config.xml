@@ -277,6 +277,6 @@
     <bool name="config_carrier_volte_available">true</bool>
 
     <!-- Configuration to support SIM contact batch operation -->
-    <bool name="config_sim_phonebook_batch_operation">false</bool>
+    <!-- <bool name="config_sim_phonebook_batch_operation">false</bool> -->
 
 </resources>
