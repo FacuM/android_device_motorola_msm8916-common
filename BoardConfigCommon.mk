@@ -45,7 +45,8 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8916
-KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/kernel/motorola/msm8916/toolchain/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
