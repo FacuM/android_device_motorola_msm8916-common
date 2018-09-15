@@ -23,9 +23,6 @@ vendor/lib/libbtnv.so
 # Camera
 lib/libmot_sensorlistener.so
 vendor/lib/libfastcvopt.so
-vendor/lib/libmmipl.so
-vendor/lib/libscve.so
-vendor/lib/libscve_mv.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -47,16 +44,14 @@ vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmQSM.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libWVStreamControlAPI_L1.so
 
 # GPS
 etc/flp.conf
-etc/gps.conf
 etc/sap.conf
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
 vendor/lib/hw/flp.default.so
+vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -107,51 +102,45 @@ vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 
-# Moto
-bin/batt_health
-bin/dbvc_atvc_property_set
-bin/hardware_revisions.sh
-
 # IMS
--vendor/app/ims/ims.apk|138de3a169d8c4703d9e5645abeb19e427b04909
--vendor/app/imssettings/imssettings.apk|3020cdd3bc6d3c5bd147f2086fdd62fae108d81b
--framework/imscmlibrary.jar|0c24d6540c06efede52169c1445272f43748180f
-bin/ims_rtp_daemon|2900e38f2d6fbb981fae9ba41ec60eb47a29fd48
-bin/imscmservice|2b6bb0cc2c244885556fe5c6ee75733b59ea1910
-bin/imsdatadaemon|30cb68236f5c8f6fe0d78f0e772a33405c5cf58b
-bin/imsqmidaemon|00c1cd071898fc7883b98b53c507d07e8b262e63
-etc/permissions/ims.xml|b77963459ea6664a0eddcbc5ca7f4220e4895c26
-etc/permissions/imscm.xml|8b99ec26c783966bbea1fcb8e72c7c0206a4e802
-etc/permissions/qti_permissions.xml|fd8a1db3c18b6d58334d747e47f4b155bb612039
-vendor/lib/lib-dplmedia.so|93af0d85c31b197efdbde915ff8f7bc404243f87
-vendor/lib/lib-ims-rcscmjni.so|5be14cd7a69709f673297ab175cb011a6f2fd1a3
-vendor/lib/lib-imsSDP.so|a0a140eee8ca53ec1d28e9357c5061803fde2b27
-vendor/lib/lib-imsdpl.so|e6e023f82bfc55ba9787c09aabf629da15654ef2
-vendor/lib/lib-imsqimf.so|d497b01f0219ce261da84654dba05b0b8eef6aee
-vendor/lib/lib-imsrcs.so|7968cbf064c9bdf69ab1f2f61834efad39f19f08
-vendor/lib/lib-imsrcscm.so|c2505f7f814d63fa5dff1f6e3f4f4492d5561258
-vendor/lib/lib-imsrcscmclient.so|d5d319cacd1c9fb5b8e76962ca97997de514359f
-vendor/lib/lib-imsrcscmservice.so|75eef124e07260a244a579bce2cf62c14f794406
-vendor/lib/lib-imss.so|38fa3f4614850829491101e59841b83fe3c783cb
-vendor/lib/lib-imsvt.so|6d9bc7654d48ab9f4315f43bcf62fc9f67f94ffd
-vendor/lib/lib-imsxml.so|9dc567b2fc47682525937e0b37c119649cf9c1a5
-vendor/lib/lib-rcsimssjni.so|289fc875e1e2b6a0bcb6bb7c057d0e293a6ca347
-vendor/lib/lib-rcsjni.so|dc46a320f28dc67699d6b97ae9bfcf96028dd4e9
-vendor/lib/lib-rtpcommon.so|f9a5632dafc29a44b7358d03a1cc572eee5a25d5
-vendor/lib/lib-rtpcore.so|8f4798e5e80c929287719ffb30ac6ecbf6a07d67
-vendor/lib/lib-rtpdaemoninterface.so|32bae4937f548463bb101c00090fc6d928579410
-vendor/lib/lib-rtpsl.so|115c5dbec50e5d288552c3f35155e47404323395
-vendor/lib/libimscamera_jni.so|f236db9b4edc3fd5b7c3a2c071c7a48e3ab5c7f2
-vendor/lib/libimsmedia_jni.so|fdd6027844b0b7ca0f7b1f903e131d0ad796bc4d
-vendor/lib/librcc.so|a409377843c8c0af7f92beac09048927e36e7ca0
-vendor/lib/libvoice-svc.so|fe8d2807b5b1a35310a9bcf80ceb4467503130b0
+-framework/imscmlibrary.jar
+-vendor/app/ims/ims.apk|66fa3ab695d7be55a334cbee6e9c94d60089ac2a
+-vendor/app/imssettings/imssettings.apk|63c44e1961546bd90f1675da696f194ae8f8506d
+bin/imscmservice
+bin/imsdatadaemon
+bin/imsqmidaemon
+bin/ims_rtp_daemon
+etc/permissions/imscm.xml
+etc/permissions/ims.xml
+etc/permissions/qti_permissions.xml
+vendor/lib/lib-imscamera.so
+vendor/lib/libimscamera_jni.so
+vendor/lib/lib-imsdpl.so
+vendor/lib/libimsmedia_jni.so
+vendor/lib/lib-imsqimf.so
+vendor/lib/lib-imsrcs.so
+vendor/lib/lib-imsrcscm.so
+vendor/lib/lib-imsrcscmclient.so
+vendor/lib/lib-ims-rcscmjni.so
+vendor/lib/lib-imsrcscmservice.so
+vendor/lib/lib-imss.so
+vendor/lib/lib-imsSDP.so
+vendor/lib/lib-imsvt.so
+vendor/lib/lib-imsxml.so
+vendor/lib/librcc.so
+vendor/lib/lib-rcsimssjni.so
+vendor/lib/lib-rcsjni.so
+vendor/lib/lib-rtpcommon.so
+vendor/lib/lib-rtpcore.so
+vendor/lib/lib-rtpdaemoninterface.so
+vendor/lib/lib-rtpsl.so
 
 # Qualcomm framework
 bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libDiagService.so
 vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so|47858b3770d5aff6da89180ea34bb37c810adc54
+vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libFileMux.so
 vendor/lib/libqcci_legacy.so
@@ -169,14 +158,14 @@ vendor/lib/libsmemlog.so
 
 # Radio
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-bin/netmgrd|d8d34a71f387865efc2b8b39ad230b92f08045e0
+bin/netmgrd
 bin/qmuxd
 bin/radish
-bin/rild|c8993981f142b4a13c84848aabce75c07980f089
+bin/rild
 bin/rmt_storage
 bin/qmi_motext_hook
 etc/data/dsi_config.xml
-etc/data/netmgr_config.xml|f8e458bf1ffe710999823acf3bcfb07282eac2b7
+etc/data/netmgr_config.xml
 etc/data/qmi_config.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
@@ -186,32 +175,36 @@ lib/libadropbox.so
 lib/libmdmcutback.so
 lib/libmotext_inf.so
 lib/libqmimotext.so
--lib/libril.so|0f8c751a80f5c6833a65952604584cb620ed4c62
+-lib/libril.so
 vendor/qcril.db
 vendor/lib/libcneapiclient.so
-vendor/lib/libconfigdb.so|3589193fc9c65977fd27453cc7cfe8185fdabfbc
+vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so|05beca2a8e79a91baf603a08ad2b15927ff39a19
+vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so
+vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/librilqmiservices.so
+vendor/lib/libsettings.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
+vendor/lib/libvoice-svc.so
 
 # Sensorhub Firmware
 etc/firmware/sensorhubfw.bin
 etc/firmware/sensorhubver.txt
 
 # Sensors
-bin/stml0xx
+bin/stml0xx|93bbcf642bdf0916181a42bf04b1adc47103bf90
 lib/hw/sensorhub.msm8916.so
 
 # Thermal
-bin/thermal-engine
+vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 

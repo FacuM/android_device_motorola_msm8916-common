@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
-/* TODO: Actually provide implementations for these function! */
+#include <gui/Sensor.h>
 
-void _ZNK7android11MediaBuffer8refcountEv() {}
+extern "C" int ASensor_getHandle(ASensor const* sensor)
+{
+    return static_cast<android::Sensor const*>(sensor)->getHandle();
+}
