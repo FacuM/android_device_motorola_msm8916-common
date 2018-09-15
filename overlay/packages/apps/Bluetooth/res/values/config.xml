@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <bool name="disable_non_aosp_bt_features">true</bool>
+    <!--<bool name="disable_non_aosp_bt_features">true</bool>-->
 </resources>
