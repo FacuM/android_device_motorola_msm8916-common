@@ -1,5 +1,6 @@
 # Copyright (C) 2016 The CyanogenMod Project
 #               2017 The LineageOS Project
+#               2018 The CarbonROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,8 +16,9 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
-# Inherit some common LOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -26,11 +28,14 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := lineage_harpia
+PRODUCT_NAME := carbon_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := harpia
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="razhor & facuarmo"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="harpia-user 7.1.1 NPIS26.48-36-5 12 release-keys"
