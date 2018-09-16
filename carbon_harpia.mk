@@ -34,9 +34,6 @@ PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := harpia
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="razhor & facuarmo"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="harpia-user 7.1.1 NPIS26.48-36-5 12 release-keys"
 
