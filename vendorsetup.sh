@@ -1,3 +1,3 @@
-add_lunch_combo cos_harpia-user
-add_lunch_combo cos_harpia-userdebug
-add_lunch_combo cos_harpia-eng
+add_lunch_combo gzosp_harpia-user
+add_lunch_combo gzosp_harpia-userdebug
+add_lunch_combo gzosp_harpia-eng
