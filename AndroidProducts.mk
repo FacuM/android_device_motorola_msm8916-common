@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_harpia.mk
+    $(LOCAL_DIR)/cos.mk
